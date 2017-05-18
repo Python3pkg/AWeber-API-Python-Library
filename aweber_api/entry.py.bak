@@ -1,4 +1,4 @@
-from urllib.parse import urlencode
+from urllib import urlencode
 
 import aweber_api
 from aweber_api.data_dict import DataDict

@@ -1,7 +1,7 @@
 import json
 import os
-from urllib.parse import urlparse, parse_qs
-from urllib.parse import quote
+from urlparse import urlparse, parse_qs
+from urllib import quote
 
 import mock
 

@@ -1,4 +1,4 @@
-from urllib.parse import urlencode
+from urllib import urlencode
 import json
 import os
 
@@ -85,7 +85,7 @@ class OAuthAdapter(object):
         return client
 
     def _prepare_request_body(self, method, url, data):
-        if method not in ['POST', 'GET', 'PATCH'] or len(list(data.keys())) == 0:
+        if method not in ['POST', 'GET', 'PATCH'] or len(data.keys()) == 0:
             return ''
         if method in ['POST', 'GET']:
             # WARNING: non-primative items in data must be json serialized.

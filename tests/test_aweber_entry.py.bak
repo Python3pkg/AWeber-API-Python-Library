@@ -1,6 +1,6 @@
 import re
 from unittest import TestCase
-from urllib.parse import urlencode
+from urllib import urlencode
 
 from aweber_api import AWeberAPI, AWeberCollection, AWeberEntry
 from aweber_api.base import APIException

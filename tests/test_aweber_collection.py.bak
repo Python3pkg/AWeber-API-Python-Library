@@ -96,7 +96,7 @@ class TestCreatingCustomFields(TestCase):
 
     def test_should_return_new_resource_entry_object(self):
         assert isinstance(self.resp, AWeberEntry)
-        assert self.resp.name == 'COLOR'
+        assert self.resp.name == u'COLOR'
         assert self.resp.is_subscriber_updateable == True
         assert self.resp.id == 2
         assert self.resp.url == '/accounts/1/lists/303449/custom_fields/2'
